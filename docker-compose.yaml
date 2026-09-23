@@ -75,9 +75,6 @@ services:
       - POSTGRES_USER=${DATABASE_USER:-postgres}
       - POSTGRES_PWD=${DATABASE_PASSWORD:-password}
       - POSTGRES_SEEDS=${DATABASE_HOST:-postgres}
-      - BIND_ON_IP=0.0.0.0
-      - TEMPORAL_BROADCAST_ADDRESS=temporal
-      - TEMPORAL_CLI_ADDRESS=127.0.0.1:7233
     # README: To add local env variables uncomment the following line and add a .env file in the root directory
     # env_file:
     #   - .env
